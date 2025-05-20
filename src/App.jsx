@@ -40,4 +40,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 1:03:01
+// stopped at 1:15:19
