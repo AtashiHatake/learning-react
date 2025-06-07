@@ -11,10 +11,14 @@ import CubeRotate from "./components/FramerMotion";
 import ConditionalRendering from "./components/ConditionalRendering";
 import CondRenderWeather from "./components/CondRenderWeather";
 import CondRenderUserStatus from "./components/CondRenderUserStatus";
+{/* react icons below */}
+import { FaCartArrowDown } from "react-icons/fa";
+import StylingCard from "./components/StylingCard";
 
 
 const App = () => {
     return <div> 
+        <StylingCard />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -51,4 +55,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 1:15:19
+// stopped at 1:59:38
