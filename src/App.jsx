@@ -7,10 +7,15 @@ import ProductList from "./components/ProductList";
 import PersonProps from "./components/PersonProps";
 import ProductProps from "./components/ProductProps";
 import CardChildrenProps from "./components/CardChildrenProps";
+import CubeRotate from "./components/FramerMotion";
+import ConditionalRendering from "./components/ConditionalRendering";
+import CondRenderWeather from "./components/CondRenderWeather";
+import CondRenderUserStatus from "./components/CondRenderUserStatus";
 
 
 const App = () => {
     return <div> 
+        {/* 
         <Greetings />
         <ProductInfo />
         <Lists />
@@ -32,6 +37,12 @@ const App = () => {
                 <p className="text-blue-900">Some text for card 3</p>
             </div>
         </CardChildrenProps>
+        <ConditionalRendering />
+        <br />
+        <CondRenderWeather/>
+        <br />
+        <CondRenderUserStatus />
+        */}
         {/* <JSXRules/> */}
     </div>
 }
