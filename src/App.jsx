@@ -14,11 +14,16 @@ import CondRenderUserStatus from "./components/CondRenderUserStatus";
 {/* react icons below */}
 import { FaCartArrowDown } from "react-icons/fa";
 import StylingCard from "./components/StylingCard";
+import State from "./components/State";
+import MoviesState from "./components/MoviesState";
+import ShareState from "./components/ShareState";
 
 
 const App = () => {
     return <div> 
-        <StylingCard />
+        <State />
+        <MoviesState />
+        <ShareState />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -46,6 +51,7 @@ const App = () => {
         <CondRenderWeather/>
         <br />
         <CondRenderUserStatus />
+        <StylingCard />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -55,4 +61,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 1:59:38
+// stopped at 2:10:03
