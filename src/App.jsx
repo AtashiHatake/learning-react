@@ -17,13 +17,14 @@ import StylingCard from "./components/StylingCard";
 import State from "./components/State";
 import MoviesState from "./components/MoviesState";
 import ShareState from "./components/ShareState";
+import ExampleOne from "./components/ExampleOne";
+import TodoList from "./components/TodoList";
 
 
 const App = () => {
     return <div> 
-        <State />
-        <MoviesState />
-        <ShareState />
+        <ExampleOne />
+        <TodoList /> 
         {/* 
         <Greetings />
         <ProductInfo />
@@ -52,6 +53,9 @@ const App = () => {
         <br />
         <CondRenderUserStatus />
         <StylingCard />
+        <State />
+        <MoviesState />
+        <ShareState />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -61,4 +65,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 2:10:03
+// stopped at 2:25:00
