@@ -21,15 +21,17 @@ import ExampleOne from "./components/ExampleOne";
 import TodoList from "./components/TodoList";
 import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
+import PortalCopyInput from "./components/PortalCopyInput";
+import PortalPopUpcontent from "./components/PortalPopUpcontent";
+import DarkLightSwitch from "./components/DarkLightSwitch";
 
 
 
 const App = () => {
     return <div> 
-        <ExampleOne />
-        <TodoList /> 
-        <Profile />
-        <ShoppingList />
+        <PortalCopyInput />
+        <DarkLightSwitch />
+        
         {/* 
         <Greetings />
         <ProductInfo />
@@ -61,6 +63,10 @@ const App = () => {
         <State />
         <MoviesState />
         <ShareState />
+        <ExampleOne />
+        <TodoList /> 
+        <Profile />
+        <ShoppingList />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -70,4 +76,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 2:25:00
+// stopped at 2:45:43 React Portal
