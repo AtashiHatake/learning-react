@@ -19,12 +19,17 @@ import MoviesState from "./components/MoviesState";
 import ShareState from "./components/ShareState";
 import ExampleOne from "./components/ExampleOne";
 import TodoList from "./components/TodoList";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
+
 
 
 const App = () => {
     return <div> 
         <ExampleOne />
         <TodoList /> 
+        <Profile />
+        <ShoppingList />
         {/* 
         <Greetings />
         <ProductInfo />
