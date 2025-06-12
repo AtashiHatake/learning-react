@@ -26,13 +26,15 @@ import PortalPopUpcontent from "./components/PortalPopUpcontent";
 import DarkLightSwitch from "./components/DarkLightSwitch";
 import UseEffectHook from "./components/UseEffectHook";
 import UseEffectDataFetching from "./components/UseEffectDataFetching";
+import UseEffectBasicEffect from "./components/UseEffectBasicEffect";
+import UseEffectCounterEffect from "./components/UseEffectCounterEffect";
+import UseEffectFetchData from "./components/UseEffectFetchData";
 
 
 
 const App = () => {
     return <div> 
-        
-        <UseEffectDataFetching />
+        <UseEffectFetchData />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -71,6 +73,9 @@ const App = () => {
         <PortalCopyInput />
         <DarkLightSwitch />
         <UseEffectHook />
+        <UseEffectDataFetching />
+        <UseEffectBasicEffect />
+        <UseEffectCounterEffect />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -80,4 +85,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 3:00:00 useEffect challenge
+// stopped at 3:05:48 
