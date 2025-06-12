@@ -11,7 +11,7 @@ import CubeRotate from "./components/FramerMotion";
 import ConditionalRendering from "./components/ConditionalRendering";
 import CondRenderWeather from "./components/CondRenderWeather";
 import CondRenderUserStatus from "./components/CondRenderUserStatus";
-{/* react icons below */}
+{/* react icon below */}
 import { FaCartArrowDown } from "react-icons/fa";
 import StylingCard from "./components/StylingCard";
 import State from "./components/State";
@@ -24,14 +24,15 @@ import ShoppingList from "./components/ShoppingList";
 import PortalCopyInput from "./components/PortalCopyInput";
 import PortalPopUpcontent from "./components/PortalPopUpcontent";
 import DarkLightSwitch from "./components/DarkLightSwitch";
+import UseEffectHook from "./components/UseEffectHook";
+import UseEffectDataFetching from "./components/UseEffectDataFetching";
 
 
 
 const App = () => {
     return <div> 
-        <PortalCopyInput />
-        <DarkLightSwitch />
         
+        <UseEffectDataFetching />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -67,6 +68,9 @@ const App = () => {
         <TodoList /> 
         <Profile />
         <ShoppingList />
+        <PortalCopyInput />
+        <DarkLightSwitch />
+        <UseEffectHook />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -76,4 +80,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 2:45:43 React Portal
+// stopped at 3:00:00 useEffect challenge
