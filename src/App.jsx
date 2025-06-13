@@ -34,6 +34,7 @@ import ComponentA from "./components/ComponentA";
 import UserProfile from "./components/UserProfile";
 import { UserProvider } from "./components/UserContext";
 import UpdateUser from "./components/UpdateUser";
+import UseReducerHook from "./components/UseReducerHook";
 
 
 export const nameData = createContext();
@@ -46,17 +47,7 @@ const App = () => {
     const age = 21;
 
     return <div> 
-        <nameData.Provider value={name}>
-            <multipleData.Provider value={age}>
-                <ComponentA  />
-            </multipleData.Provider>
-        </nameData.Provider>
-
-        <UserProvider>
-            <UserProfile />
-            <UpdateUser />
-        </UserProvider>
-
+        <UseReducerHook />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -99,6 +90,17 @@ const App = () => {
         <UseEffectBasicEffect />
         <UseEffectCounterEffect />
         <UseEffectFetchData />
+
+         <nameData.Provider value={name}>
+            <multipleData.Provider value={age}>
+                <ComponentA  />
+            </multipleData.Provider>
+        </nameData.Provider>
+
+        <UserProvider>
+            <UserProfile />
+            <UpdateUser />
+        </UserProvider>
         */}
         {/* <JSXRules/> */}
     </div>
@@ -108,4 +110,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 3:25:45 
+// stopped at 3:34:38 
