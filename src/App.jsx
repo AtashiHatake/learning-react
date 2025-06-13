@@ -31,8 +31,9 @@ import UseEffectCounterEffect from "./components/UseEffectCounterEffect";
 import UseEffectFetchData from "./components/UseEffectFetchData";
 import { createContext } from "react";
 import ComponentA from "./components/ComponentA";
-import ComponentB from "./components/ComponentB";
-import ComponentC from "./components/ComponentC";
+import UserProfile from "./components/UserProfile";
+import { UserProvider } from "./components/UserContext";
+import UpdateUser from "./components/UpdateUser";
 
 
 export const nameData = createContext();
@@ -50,6 +51,12 @@ const App = () => {
                 <ComponentA  />
             </multipleData.Provider>
         </nameData.Provider>
+
+        <UserProvider>
+            <UserProfile />
+            <UpdateUser />
+        </UserProvider>
+
         {/* 
         <Greetings />
         <ProductInfo />
@@ -101,4 +108,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 3:05:48 
+// stopped at 3:25:45 
