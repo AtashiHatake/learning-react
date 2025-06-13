@@ -29,12 +29,27 @@ import UseEffectDataFetching from "./components/UseEffectDataFetching";
 import UseEffectBasicEffect from "./components/UseEffectBasicEffect";
 import UseEffectCounterEffect from "./components/UseEffectCounterEffect";
 import UseEffectFetchData from "./components/UseEffectFetchData";
+import { createContext } from "react";
+import ComponentA from "./components/ComponentA";
+import ComponentB from "./components/ComponentB";
+import ComponentC from "./components/ComponentC";
 
 
+export const nameData = createContext();
+
+export const multipleData = createContext();
 
 const App = () => {
+    const name = "Atharva";
+
+    const age = 21;
+
     return <div> 
-        <UseEffectFetchData />
+        <nameData.Provider value={name}>
+            <multipleData.Provider value={age}>
+                <ComponentA  />
+            </multipleData.Provider>
+        </nameData.Provider>
         {/* 
         <Greetings />
         <ProductInfo />
@@ -76,6 +91,7 @@ const App = () => {
         <UseEffectDataFetching />
         <UseEffectBasicEffect />
         <UseEffectCounterEffect />
+        <UseEffectFetchData />
         */}
         {/* <JSXRules/> */}
     </div>
