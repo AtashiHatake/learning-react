@@ -35,6 +35,7 @@ import UserProfile from "./components/UserProfile";
 import { UserProvider } from "./components/UserContext";
 import UpdateUser from "./components/UpdateUser";
 import UseReducerHook from "./components/UseReducerHook";
+import CounterReducer from "./components/CounterReducer";
 
 
 export const nameData = createContext();
@@ -47,7 +48,7 @@ const App = () => {
     const age = 21;
 
     return <div> 
-        <UseReducerHook />
+        <CounterReducer />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -101,6 +102,7 @@ const App = () => {
             <UserProfile />
             <UpdateUser />
         </UserProvider>
+        <UseReducerHook />
         */}
         {/* <JSXRules/> */}
     </div>
