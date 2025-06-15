@@ -36,6 +36,8 @@ import { UserProvider } from "./components/UserContext";
 import UpdateUser from "./components/UpdateUser";
 import UseReducerHook from "./components/UseReducerHook";
 import CounterReducer from "./components/CounterReducer";
+import UseRef from "./components/UseRef";
+import UseID from "./components/UseID";
 
 
 export const nameData = createContext();
@@ -48,7 +50,11 @@ const App = () => {
     const age = 21;
 
     return <div> 
-        <CounterReducer />
+        <UseID />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quam omnis qui suscipit assumenda, temporibus, officiis incidunt possimus repellendus exercitationem laborum, ad quisquam?
+        </p>
+        <UseID />
         {/* 
         <Greetings />
         <ProductInfo />
@@ -103,6 +109,8 @@ const App = () => {
             <UpdateUser />
         </UserProvider>
         <UseReducerHook />
+        <CounterReducer />
+        <UseRef />
         */}
         {/* <JSXRules/> */}
     </div>
@@ -112,4 +120,4 @@ export default App;
 
 // JSX we need to use className not class like we use in HTML.
 // for lists we generally use loops or map
-// stopped at 3:34:38 
+// stopped at 3:50:46
